@@ -1,2 +1,6 @@
 /*
 !.gitignore
+
+# npm config
+!package.json
+!package-lock.json

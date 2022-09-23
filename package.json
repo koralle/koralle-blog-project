@@ -1,0 +1,24 @@
+{
+  "name": "koralle-blog-project",
+  "version": "0.1.0",
+  "description": "koralleの雑多ブログです。",
+  "scripts": {
+    "preinstall": "npx only-allow npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koralle/koralle-blog-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/koralle/koralle-blog-project/issues"
+  },
+  "keywords": [
+    "next.js",
+    "react"
+  ],
+  "homepage": "https://blog.koralle-mg.com",
+  "engines": {
+    "node": "18.x",
+    "npm": "8.x"
+  }
+}
