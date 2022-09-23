@@ -1,2 +1,17 @@
 /*
 !.gitignore
+
+# npm config
+!package.json
+!package-lock.json
+!.npmrc
+
+# TypeScript
+!tsconfig.json
+
+# Next.js
+!next-env.d.ts
+!next.config.js
+
+# Sources
+!/src/
