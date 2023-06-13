@@ -44,6 +44,11 @@
     "prettier": "^2.8.8",
     "sass": "^1.63.3",
     "storybook": "^7.0.20",
+    "stylelint": "^15.7.0",
+    "stylelint-config-css-modules": "^4.2.0",
+    "stylelint-config-recess-order": "^4.2.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
     "ts-jest": "^29.1.0",
     "typed-scss-modules": "^7.1.0"
   }
