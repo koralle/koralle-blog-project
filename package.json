@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "tsm": "typed-scss-modules src --watch --implementation sass --nameFormat none --exportType default --aliasPrefixes.@ src/"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
