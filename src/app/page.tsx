@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+
 import { getArticles } from "@/lib/newt";
 import type { Article } from "@/types/article";
 

@@ -10,7 +10,7 @@ const Article = async ({ params }) => {
     <>
       <main>
         <h1>{article?.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: article.body }}></div>
+        <div dangerouslySetInnerHTML={{ __html: article.body }} />
       </main>
     </>
   );

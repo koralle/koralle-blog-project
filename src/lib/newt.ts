@@ -1,4 +1,5 @@
 import { createClient } from "newt-client-js";
+
 import type { Article } from "@/types/article";
 
 const client = createClient({
@@ -31,4 +32,4 @@ const getArticleBySlug = async (slug: string) => {
   return article;
 };
 
-export { getArticles, getArticleBySlug };
+export { getArticleBySlug,getArticles };
