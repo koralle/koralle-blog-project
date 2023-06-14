@@ -1,4 +1,4 @@
-import { getArticleBySlug, getArticles } from "@/lib/newt";
+import { getArticleBySlug, getArticles } from '@/lib/newt';
 
 const Article = async ({ params }) => {
   const { slug } = params;
@@ -21,7 +21,7 @@ export default Article;
 export const generateStaticParams = async () => {
   const articles = await getArticles();
 
-  return articles.map((article) => {
+  return articles.map(article => {
     article.slug;
   });
 };

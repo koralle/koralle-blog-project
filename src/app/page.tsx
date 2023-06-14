@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Link from "next/link";
+import Head from 'next/head';
+import Link from 'next/link';
 
-import { getArticles } from "@/lib/newt";
-import type { Article } from "@/types/article";
+import { getArticles } from '@/lib/newt';
+import type { Article } from '@/types/article';
 
 const Home = async () => {
   const articles = await getArticles();
@@ -11,12 +11,15 @@ const Home = async () => {
     <>
       <Head>
         <title>Newt・Next.jsブログ</title>
-        <meta name="description" content="NewtとNext.jsを利用したブログです" />
+        <meta
+          name='description'
+          content='NewtとNext.jsを利用したブログです'
+        />
       </Head>
       <main>
         <h1>Hello, Newt!!</h1>
         <ul>
-          {articles.map((article) => {
+          {articles.map(article => {
             return (
               <li key={article._id}>
                 <Link href={`articles/${article.slug}`}>{article.title}</Link>
