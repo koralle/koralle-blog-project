@@ -1,15 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import * as THREE from 'three';
 
 import { getArticles } from '../lib/newt';
 import { Mugicha } from './_components/Mugicha';
 
 const Home: NextPage = async () => {
   const articles = await getArticles();
-
-  console.log(THREE);
 
   return (
     <>
