@@ -19,6 +19,13 @@ const RootLayout = ({ children }: Props) => {
       lang='ja'
       className={`${notoSansJp.variable}`}
     >
+      <head>
+        <meta
+          name='color-scheme'
+          content='light dark'
+        />
+      </head>
+
       <body>{children}</body>
     </html>
   );
