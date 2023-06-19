@@ -1,0 +1,21 @@
+@use './variables/typography.scss';
+@use './variables/colors.scss';
+@use './variables/spacing.scss';
+@use '../../../node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  font-family: var(--noto-sans-jp);
+  font-weight: 400;
+  color-scheme: 'light';
+
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
