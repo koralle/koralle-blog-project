@@ -1,8 +1,9 @@
-import '../styles/global.modules.scss';
+import './_styles/global.scss';
 
 import { ReactNode } from 'react';
 
 import { notoSansJp } from '../resources/font';
+import { Header } from './_components/Header';
 
 export const metadata = {
   title: 'Create Next App',
@@ -26,7 +27,17 @@ const RootLayout = ({ children }: Props) => {
         />
       </head>
 
-      <body>{children}</body>
+      <body>
+        <div className='container'>
+          <Header />
+          <main
+            id='mainContainer'
+            tabIndex={0}
+          >
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 };
