@@ -12,10 +12,12 @@
     "tsm": "typed-scss-modules src --watch --implementation sass --nameFormat none --exportType default --aliasPrefixes.@ src/"
   },
   "dependencies": {
+    "@apollo/server": "^4.7.4",
     "@types/node": "20.3.0",
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",
     "eslint-config-next": "13.4.5",
+    "graphql": "^16.6.0",
     "modern-normalize": "^2.0.0",
     "newt-client-js": "^3.2.4",
     "next": "13.4.5",
