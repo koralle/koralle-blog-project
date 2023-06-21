@@ -9,7 +9,8 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "tsm": "typed-scss-modules src --watch --implementation sass --nameFormat none --exportType default --aliasPrefixes.@ src/"
+    "tsm": "typed-scss-modules src --watch --implementation sass --nameFormat none --exportType default --aliasPrefixes.@ src/",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
     "@apollo/server": "^4.7.4",
