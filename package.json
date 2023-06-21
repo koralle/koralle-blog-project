@@ -16,6 +16,7 @@
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",
     "eslint-config-next": "13.4.5",
+    "modern-normalize": "^2.0.0",
     "newt-client-js": "^3.2.4",
     "next": "13.4.5",
     "react": "18.2.0",
@@ -54,5 +55,9 @@
     "stylelint-config-standard-scss": "^9.0.0",
     "ts-jest": "^29.1.0",
     "typed-scss-modules": "^7.1.0"
+  },
+  "volta": {
+    "node": "20.3.0",
+    "pnpm": "8.6.3"
   }
 }

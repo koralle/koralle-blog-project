@@ -3,3 +3,9 @@ extends:
   - stylelint-config-standard-scss
   - stylelint-config-css-modules
   - stylelint-config-recess-order
+rules:
+  # CSS Modulesを使う際の不具合を防止したい
+  selector-id-pattern: null
+  selector-class-pattern: null
+  scss/at-import-partial-extension:
+    - scss

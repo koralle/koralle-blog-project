@@ -1,0 +1,11 @@
+:root {
+  --background-light-primary: #efefef;
+  --text-light-body: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-dark-primary: #222;
+    --text-dark-body: #efefef;
+  }
+}

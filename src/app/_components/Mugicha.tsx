@@ -73,7 +73,6 @@ const Mugicha: FC = () => {
 
   return (
     <>
-      <h3>Mugicha!</h3>
       <canvas id='canvas'></canvas>
     </>
   );
