@@ -1,0 +1,93 @@
+scalar DateTimeWithTimeZone
+
+interface Image {
+  _id: ID!
+  src: String!
+  fileType: String!
+  fileSize: Int!
+  fileName: String!
+  width: Int!
+  height: Int!
+}
+
+type Raw {
+  createdAt: DateTimeWithTimeZone!
+  updatedAt: DateTimeWithTimeZone!
+  firstPublishedAt: DateTimeWithTimeZone!
+  publishedAt: DateTimeWithTimeZone!
+}
+
+type Sys {
+  createdAt: DateTimeWithTimeZone!
+  updatedAt: DateTimeWithTimeZone!
+  raw: Raw!
+}
+
+type Category {
+  _id: ID!
+  name: String!
+  slug: String!
+  _sys: Sys!
+}
+
+type ProfileImage implements Image {
+  _id: ID!
+  src: String!
+  fileType: String!
+  fileSize: Int!
+  fileName: String!
+  width: Int!
+  height: Int!
+}
+
+type Author {
+  _id: ID!
+  fullName: String!
+  biography: String!
+  profileImage: ProfileImage
+  _sys: Sys!
+}
+
+type CoverImage implements Image {
+  _id: ID!
+  src: String!
+  fileType: String!
+  fileSize: Int!
+  fileName: String!
+  width: Int!
+  height: Int!
+}
+
+type OgImage implements Image {
+  _id: ID!
+  src: String!
+  fileType: String!
+  fileSize: Int!
+  fileName: String!
+  width: Int!
+  height: Int!
+}
+
+type Meta {
+  title: String!
+  description: String!
+  ogImage: OgImage
+}
+
+type Article {
+  _id: ID!
+  title: String!
+  slug: String!
+  body: String!
+  author: String!
+  categories: [String]
+  coverImage: CoverImage
+  meta: Meta!
+  _sys: Sys
+}
+
+type Query {
+  categories: [Category]!
+  authors: [Author]!
+  articles: [Article]!
+}
