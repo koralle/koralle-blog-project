@@ -15,6 +15,9 @@ const config: CodegenConfig = {
         enumsAsConst: true,
         immutableTypes: true,
         strictScalars: true,
+        scalars: {
+          DateTimeWithTimeZone: 'string',
+        },
       },
     },
   },
