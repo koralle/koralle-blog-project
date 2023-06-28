@@ -52,6 +52,9 @@ devDependencies:
   '@graphql-codegen/typescript':
     specifier: ^4.0.1
     version: 4.0.1(graphql@16.6.0)
+  '@graphql-codegen/typescript-operations':
+    specifier: ^4.0.1
+    version: 4.0.1(graphql@16.6.0)
   '@graphql-codegen/typescript-resolvers':
     specifier: ^4.0.1
     version: 4.0.1(graphql@16.6.0)
@@ -3186,6 +3189,22 @@ packages:
       '@graphql-tools/utils': 10.0.1(graphql@16.6.0)
       graphql: 16.6.0
       tslib: 2.5.3
+    dev: true
+
+  /@graphql-codegen/typescript-operations@4.0.1(graphql@16.6.0):
+    resolution: {integrity: sha512-GpUWWdBVUec/Zqo23aFLBMrXYxN2irypHqDcKjN78JclDPdreasAEPcIpMfqf4MClvpmvDLy4ql+djVAwmkjbw==}
+    peerDependencies:
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+    dependencies:
+      '@graphql-codegen/plugin-helpers': 5.0.0(graphql@16.6.0)
+      '@graphql-codegen/typescript': 4.0.1(graphql@16.6.0)
+      '@graphql-codegen/visitor-plugin-common': 4.0.1(graphql@16.6.0)
+      auto-bind: 4.0.0
+      graphql: 16.6.0
+      tslib: 2.5.3
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
 
   /@graphql-codegen/typescript-resolvers@4.0.1(graphql@16.6.0):
