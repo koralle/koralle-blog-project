@@ -1,2 +1,5 @@
 # Next.js
 **/.next
+
+# generated
+**/generated
