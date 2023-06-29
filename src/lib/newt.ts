@@ -1,6 +1,6 @@
 import { createClient } from 'newt-client-js';
 
-import type { Article } from '@/types/article';
+import type { Article } from '@/generated/graphql';
 
 const client = createClient({
   spaceUid: process.env.NEWT_SPACE_UID + '',

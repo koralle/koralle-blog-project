@@ -4,7 +4,7 @@ import { ApolloServer } from '@apollo/server';
 import { startServerAndCreateNextHandler } from '@as-integrations/next';
 import { NextRequest, NextResponse } from 'next/server';
 
-import { resolvers } from '../../../lib/graphql/resolvers';
+import { resolvers } from '@/lib/graphql/resolvers';
 
 const typeDefs = readFileSync('./schemas/schema.graphql', { encoding: 'utf-8', flag: 'r' });
 

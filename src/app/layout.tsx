@@ -2,8 +2,8 @@ import './_styles/global.scss';
 
 import { ReactNode } from 'react';
 
-import { notoSansJp } from '../resources/font';
-import { Header } from './_components/Header';
+import { Header } from '@/app/_components/Header';
+import { notoSansJp } from '@/resources/font';
 
 export const metadata = {
   title: 'Create Next App',
