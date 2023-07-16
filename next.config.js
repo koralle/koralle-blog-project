@@ -1,6 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
 
+const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
+const withVanillaExtract = createVanillaExtractPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   sassOptions: {
@@ -8,4 +11,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withVanillaExtract(nextConfig);
