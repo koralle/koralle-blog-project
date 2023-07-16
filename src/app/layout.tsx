@@ -1,5 +1,3 @@
-import '../styles/global.modules.scss';
-
 import { ReactNode } from 'react';
 
 import { notoSansJp } from '../resources/font';
