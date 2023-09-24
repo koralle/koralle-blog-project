@@ -1,4 +1,5 @@
-node_modules
+# node_modules
+**/node_modules
 
 /.cache
 /functions/\[\[path\]\].js
@@ -7,3 +8,6 @@ node_modules
 /functions/version.txt
 /public/build
 .dev.vars
+
+# .DS_Store files
+**/.DS_Store
